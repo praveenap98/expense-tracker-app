@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Status from "./components/Status";
+import HistoryList from "./components/HistoryList";
+import TransactionInput from "./components/TransactionInput";
+import { AppProvider } from "./context/AppContext";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return(
+        <AppProvider>
+        <div className="container">
+            <h4 className="mt-4">Expense Tracker</h4>
+            <Status />
+            <h5 className="mt-4">History</h5>
+            <hr />
+            <HistoryList />
+            <h5 className="mt-4">Add new transaction</h5>
+            <hr />
+            <TransactionInput />
+        </div>
+        </AppProvider>
+    )
 }
 
 export default App;
