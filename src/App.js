@@ -1,7 +1,7 @@
 import React from "react";
 import Status from "./components/Status";
 import HistoryList from "./components/HistoryList";
-import TransactionInput from "./components/TransactionInput";
+import TransactionInput from "./components/TransactionInput"; 
 import { AppProvider } from "./context/AppContext";
 
 const App = () => {

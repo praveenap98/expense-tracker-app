@@ -18,7 +18,11 @@ const HistoryList = () => {
             {(Items.length > 0) ? (<>
                 <div className={`shadow-sm p-2 mb-1 d-flex justify-content-between align-items-center bg-secondary text-light`}>
                 <span>Transaction Name</span>
-                <span>Amount</span>
+                <div className="d-flex justify-content-between">
+                <span className="me-4">Amount</span>
+                <span>Action</span>
+                </div>
+                
                 </div>
                 {
                     Items.map((item) => <HistoryItem key={item.id} item={item}/>)

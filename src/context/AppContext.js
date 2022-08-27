@@ -24,6 +24,11 @@ const AppReducer = (state, action) => {
             ]
         }
 
+        case "delete_transaction" : return {
+            ...state,
+            transactions : state.transactions.filter((transaction) => transaction.id !== action.id)
+        }
+
         default : return state;
     }
 }
