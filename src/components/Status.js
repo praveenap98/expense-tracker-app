@@ -24,7 +24,7 @@ const Status = () => {
     return(
         <div className="mt-4">
             <h6>YOUR BALANCE</h6>
-            <h1>{`₹${parseFloat(totalIncome - totalExpense).toFixed(2)}`}</h1>
+            <h1 className={`text-${(totalIncome - totalExpense <= 0) ? 'danger' : 'dark'}`}>{`₹${parseFloat(totalIncome - totalExpense).toFixed(2)}`}</h1>
             <div className="shadow mt-3 d-flex justify-content-center p-3 align-items-center" style={{height:'100px', maxWidth:'350px'}}>
                 <div className="d-flex flex-column align-items-center justify-content-between">
                     <h6>INCOME</h6>
