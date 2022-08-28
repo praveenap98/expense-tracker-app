@@ -10,7 +10,7 @@ const App = () => {
         <AppProvider>
             <NavBar />
             <div className="container">
-                <h4 className="mt-4">Expense Tracker</h4>
+                {/* <h4 className="mt-4">Expense Tracker</h4> */}
                 <Status /> 
                 <h5 className="mt-4">History</h5>
                 <hr />
