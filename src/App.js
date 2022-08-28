@@ -10,9 +10,8 @@ const App = () => {
         <AppProvider>
             <NavBar />
             <div className="container">
-                {/* <NavBar /> */}
-                {/* <h4 className="mt-4">Expense Tracker</h4> */}
-                <Status />
+                <h4 className="mt-4">Expense Tracker</h4>
+                <Status /> 
                 <h5 className="mt-4">History</h5>
                 <hr />
                 <HistoryList />
