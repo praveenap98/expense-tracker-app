@@ -17,7 +17,7 @@ const TransactionInput = () => {
         transaction : {
             name : e.target[2].value, 
             //cost : parseFloat(parseFloat(e.target[3].value).toFixed(2)),
-            cost : parseFloat(e.target[3].value),
+            cost : parseInt(e.target[3].value),
             color : `${(transactionType === 'expense') ? 'danger' : 'success'}`, 
             id : Math.random()*100 
         }})
