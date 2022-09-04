@@ -1,16 +1,12 @@
 import React from "react";
 import Status from "./components/Status";
-import HistoryList from "./components/HistoryList";
-import TransactionInput from "./components/TransactionInput"; 
-import { AppProvider } from "./context/AppContext";
 import NavBar from "./components/NavBar";
 
 const App = () => {
     return(
-        <AppProvider>
+        <>
             <NavBar />
-            <div className="container">
-                {/* <h4 className="mt-4">Expense Tracker</h4> */}
+            {/* <div className="container">
                 <Status /> 
                 <h5 className="mt-4">History</h5>
                 <hr />
@@ -18,8 +14,11 @@ const App = () => {
                 <h5 className="mt-4">Add new transaction</h5>
                 <hr />
                 <TransactionInput />
+            </div> */}
+            <div className="container">
+                <Status /> 
             </div>
-        </AppProvider>
+        </>
     )
 }
 
